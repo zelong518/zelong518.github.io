@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#9e1f2f"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <text x="60" y="46" font-size="26" font-weight="700" font-family="'PingFang SC','Microsoft YaHei',sans-serif" fill="#ffffff" text-anchor="middle" dominant-baseline="central">川大</text>
+  <text x="60" y="76" font-size="18" font-weight="700" font-family="Verdana, sans-serif" fill="#ffffff" text-anchor="middle" dominant-baseline="central">SCU</text>
+</svg>
