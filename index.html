@@ -35,9 +35,8 @@
         <div class="hero-main">
           <h1 class="name">Zelong Huang (黄泽龙)</h1>
           <p>
-            I am a master's student in Computer Science at Sichuan University, a member of the
-            <a href="https://ids-lab-asia.github.io/" target="_blank" rel="noopener noreferrer">IDS Lab</a>,
-            and I have just finished my first year.
+            I am a master's student at Sichuan University, where I am a member of the
+            <a href="https://ids-lab-asia.github.io/" target="_blank" rel="noopener noreferrer">IDS Lab</a>.
           </p>
           <p>
             I am currently an inference intern at IQuest, working on large language model inference and
@@ -72,6 +71,17 @@
       </header>
 
       <section class="section">
+        <h2>News</h2>
+        <ul class="list">
+          <li>🐙 <strong>2026.08</strong> &mdash; Open-sourced <a href="https://github.com/zelong518/Hydra" target="_blank" rel="noopener noreferrer">Hydra</a>, a session-native multi-instance LLM inference engine.</li>
+          <li>📄 <strong>2026.06</strong> &mdash; <em>LoopCoder-v2: Only Loop Once for Efficient Test-Time Computation Scaling</em> is on <a href="https://arxiv.org/abs/2606.18023" target="_blank" rel="noopener noreferrer">arXiv</a>.</li>
+          <li>🎉 <strong>2026.05</strong> &mdash; <em>DLRover-LM</em> was presented at <a href="https://icde2026.github.io/ia-papers.html" target="_blank" rel="noopener noreferrer">ICDE 2026</a> (Industry &amp; Applications Track).</li>
+          <li>🔄 <strong>2025.12</strong> &mdash; <em>Close the Loop: Synthesizing Infinite Tool-Use Data via Multi-Agent Role-Playing</em> is on <a href="https://arxiv.org/abs/2512.23611" target="_blank" rel="noopener noreferrer">arXiv</a>.</li>
+          <li>🤖 <strong>2025.12</strong> &mdash; The <a href="https://huggingface.co/IQuestLab/IQuest-Coder-V1-40B-Loop-Thinking" target="_blank" rel="noopener noreferrer">IQuest-Coder-V1</a> model family (7B / 14B / 40B) is released.</li>
+        </ul>
+      </section>
+
+      <section class="section">
         <h2>Projects</h2>
         <p>Selected systems and open-source efforts across LLM inference, RLHF training, and data infrastructure.</p>
 
@@ -88,7 +98,7 @@
                 </span>
               </div>
               <strong>IQuest Team (Infrastructure contributor)</strong>
-              <p>Contributed to the training and evaluation infrastructure behind the IQuest-Coder model family; the 40B Loop-Thinking variant reaches 76.2 on SWE-Bench Verified and 81.1 on LiveCodeBench v6 with 128K context.</p>
+              <p>Contributed to the training and evaluation infrastructure behind the IQuest-Coder model family; the 40B Loop-Thinking variant reaches <mark>76.2 on SWE-Bench Verified</mark> and <mark>81.1 on LiveCodeBench v6</mark> with 128K context.</p>
             </div>
           </article>
 
@@ -103,7 +113,7 @@
                   <a href="https://github.com/zelong518/Hydra" target="_blank" rel="noopener noreferrer" aria-label="Open the Hydra GitHub repository">[GitHub]</a>
                 </span>
               </div>
-              <p>Built an inference engine for agent workloads where sessions are first-class durable objects on an external tensor-state plane: instances are stateless by construction, sessions survive <code>kill -9</code> byte-identically, weights attach over CUDA IPC in ~1.5 s, and the fleet reshapes online with zero session loss.</p>
+              <p>Built an inference engine for agent workloads where sessions are first-class durable objects on an external tensor-state plane: instances are stateless by construction, sessions <mark>survive <code>kill -9</code> byte-identically</mark>, weights attach over CUDA IPC in ~1.5 s, and the fleet reshapes online with zero session loss.</p>
             </div>
           </article>
 
@@ -185,6 +195,46 @@
 
           <article class="entry">
             <div class="entry-media">
+              <img class="entry-img" src="images/zelong/dlrover.svg" alt="Artwork for DLRover-LM" width="120" height="120" loading="lazy">
+            </div>
+            <div class="entry-body">
+              <div class="entry-heading">
+                <span class="papertitle">DLRover-LM: LLM Pre-Training Framework with Thousands of Accelerators in AntGroup</span>
+                <span class="entry-links-inline">
+                  <a href="https://icde2026.github.io/ia-papers.html" target="_blank" rel="noopener noreferrer" aria-label="See DLRover-LM in the ICDE 2026 accepted papers list">[ICDE 2026]</a>
+                </span>
+              </div>
+              Ziling Huang, Zhengmao Ye, Qingsong Cai, <strong>Zelong Huang</strong>, Bo Sang, Haitao Zhang, Jian Sha, Tingfeng Lan, Hui Lu, Yuanchun Zhou, Mingjie Tang
+              <br>
+              <em>The 42nd IEEE International Conference on Data Engineering (ICDE 2026), Industry &amp; Applications Track</em>
+              <p>An LLM pre-training framework with elastic scheduling and fault tolerance, supporting production training with thousands of accelerators at Ant Group.</p>
+            </div>
+          </article>
+
+          <article class="entry">
+            <div class="entry-media">
+              <img class="entry-img" src="images/zelong/closetheloop.svg" alt="Artwork for Close the Loop" width="120" height="120" loading="lazy">
+            </div>
+            <div class="entry-body">
+              <div class="entry-heading">
+                <span class="papertitle">Close the Loop: Synthesizing Infinite Tool-Use Data via Multi-Agent Role-Playing</span>
+                <span class="entry-links-inline">
+                  <a href="https://arxiv.org/abs/2512.23611" target="_blank" rel="noopener noreferrer" aria-label="Read Close the Loop on arXiv">[arXiv]</a>
+                </span>
+              </div>
+              Yuwen Li, Wei Zhang, <strong>Zelong Huang</strong>, Mason Yang, Jiajun Wu, Shawn Guo, Huahao Hu, Lingyi Sun, Jian Yang, Mingjie Tang, Byran Dai
+              <p>Proposes a multi-agent role-playing pipeline that synthesizes effectively unlimited tool-use training data for agentic LLMs.</p>
+            </div>
+          </article>
+
+          <details class="entries-more">
+            <summary>
+              <span class="entries-more__show">Show 2 more papers</span>
+              <span class="entries-more__hide">Show less</span>
+            </summary>
+
+          <article class="entry">
+            <div class="entry-media">
               <img class="entry-img" src="images/zelong/mlora.svg" alt="Artwork for mLoRA" width="120" height="120" loading="lazy">
             </div>
             <div class="entry-body">
@@ -207,9 +257,10 @@
                 <span class="papertitle">Multi-Task Pipeline-Bubble Filling for RLHF Training</span>
               </div>
               <em>In preparation</em>
-              <p>Interleaves rollout and training phases across concurrent RL tasks with adaptive GPU re-allocation, delivering a 23.8&ndash;36.1% end-to-end RLHF speedup without affecting convergence.</p>
+              <p>Interleaves rollout and training phases across concurrent RL tasks with adaptive GPU re-allocation, delivering a <mark>23.8&ndash;36.1%</mark> end-to-end RLHF speedup without affecting convergence.</p>
             </div>
           </article>
+          </details>
         </div>
       </section>
 
@@ -236,54 +287,10 @@
               <strong>Inference Intern</strong>
               <br>
               October 2025 - Now
-              <p>Working on large language model inference and reinforcement learning: RLHF training systems, model evaluation infrastructure, and reasoning-oriented system design behind the IQuest-Coder model family.</p>
+              <p>Working on large language model inference and reinforcement learning: model evaluation infrastructure and reasoning-oriented system design behind the IQuest-Coder model family.</p>
             </div>
           </article>
         </div>
-      </section>
-
-      <section class="section">
-        <h2>Educational Experiences</h2>
-        <div class="entries">
-          <article class="entry">
-            <div class="entry-media">
-              <img class="entry-img entry-img--logo" src="images/zelong/scu.svg" alt="Sichuan University" width="120" height="120" loading="lazy">
-            </div>
-            <div class="entry-body">
-              <strong>Sichuan University</strong>
-              <br>
-              September 2025 - Now
-              <br>
-              Master in Computer Science
-              <br>
-              <a href="https://ids-lab-asia.github.io/" target="_blank" rel="noopener noreferrer">Intelligent Data Systems Lab (IDS Lab)</a>
-            </div>
-          </article>
-
-          <article class="entry">
-            <div class="entry-media">
-              <img class="entry-img entry-img--logo" src="images/zelong/nuaa.svg" alt="Nanjing University of Aeronautics and Astronautics" width="120" height="120" loading="lazy">
-            </div>
-            <div class="entry-body">
-              <strong>Nanjing University of Aeronautics and Astronautics</strong>
-              <br>
-              September 2021 - June 2025
-              <br>
-              Bachelor of Software Engineering
-              <br>
-              Rank 4/113
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Selected Awards</h2>
-        <ul class="list">
-          <li>Outstanding Academic Scholarship (&times;6), Nanjing University of Aeronautics and Astronautics</li>
-          <li>Outstanding Student / Outstanding League Member (&times;5), Nanjing University of Aeronautics and Astronautics</li>
-          <li>Ranked 4/113 in Software Engineering, Nanjing University of Aeronautics and Astronautics</li>
-        </ul>
       </section>
 
       <footer class="footer">
