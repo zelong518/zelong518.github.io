@@ -8,11 +8,20 @@
     <link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..650;1,9..144,400..650&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script>
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch (e) {}
+    </script>
+
   </head>
 
   <body>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to day theme">☀️</button>
     <main class="container contact-page">
       <section class="contact-card">
         <p class="contact-kicker">Contact</p>
@@ -24,5 +33,28 @@
         <p class="contact-back"><a href="index.html">&larr; Back to homepage</a></p>
       </section>
     </main>
+
+    <script>
+      (function () {
+        var btn = document.getElementById('theme-toggle');
+        function isLight() {
+          return document.documentElement.getAttribute('data-theme') === 'light';
+        }
+        function paint() {
+          btn.textContent = isLight() ? '🌙' : '☀️';
+          btn.setAttribute('aria-label', isLight() ? 'Switch to night theme' : 'Switch to day theme');
+        }
+        btn.addEventListener('click', function () {
+          if (isLight()) {
+            document.documentElement.removeAttribute('data-theme');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+          try { localStorage.setItem('theme', isLight() ? 'light' : 'dusk'); } catch (e) {}
+          paint();
+        });
+        paint();
+      })();
+    </script>
   </body>
 </html>
