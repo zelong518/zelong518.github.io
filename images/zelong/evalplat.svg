@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#b79df7"/>
-      <stop offset="1" stop-color="#8a6fe8"/>
+      <stop offset="0" stop-color="#2e2350"/>
+      <stop offset="1" stop-color="#6b4fc2"/>
     </linearGradient>
     <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.4"/>
     </filter>
   </defs>
   <rect width="120" height="120" rx="18" fill="url(#g)"/>
-  <circle cx="92" cy="94" r="34" fill="#ffffff" opacity="0.22"/>
-  <circle cx="22" cy="18" r="20" fill="#ffffff" opacity="0.18"/>
-  <circle cx="104" cy="34" r="7" fill="#ffffff" opacity="0.35"/>
-  <text x="16" y="16" font-size="11" fill="#ffffff" opacity="0.9">✦</text>
-  <text x="99" y="112" font-size="9" fill="#ffffff" opacity="0.7">✦</text>
+  <circle cx="92" cy="94" r="34" fill="#f0a83c" opacity="0.10"/>
+  <circle cx="22" cy="18" r="20" fill="#ffffff" opacity="0.08"/>
+  <circle cx="104" cy="34" r="6" fill="#f0a83c" opacity="0.35"/>
+  <text x="16" y="16" font-size="11" fill="#ffd9a0" opacity="0.9">✦</text>
+  <text x="99" y="112" font-size="9" fill="#ffd9a0" opacity="0.6">✦</text>
   <text x="55" y="66" font-size="54" text-anchor="middle" dominant-baseline="central" filter="url(#s)">🧪</text>
   <text x="97" y="26" font-size="24" text-anchor="middle" dominant-baseline="central" transform="rotate(12 97 26)">📊</text>
 </svg>
